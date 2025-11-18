@@ -1,7 +1,7 @@
 from turtle import *
 import random
 import math
-import ru_local_case11 as ru
+import ru_local as ru
 
 tracer(False)
 

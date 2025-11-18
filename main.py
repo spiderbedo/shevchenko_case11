@@ -7,6 +7,7 @@ tracer(False)
 
 
 def recursive_square(order: int, size: float) -> None:
+    
     """
     Draws a recursive rotating square pattern.
     Args:
@@ -39,6 +40,7 @@ def recursive_square(order: int, size: float) -> None:
 
 
 def tree_fractal(order: int, size: float) -> None:
+    
     """
     Draws a branching tree-like fractal.
     Args:
@@ -47,6 +49,7 @@ def tree_fractal(order: int, size: float) -> None:
     Returns:
         None
     """
+    
     colormode(255)
     cg = 255 - int(order * (250 / 6)) % 255
     color(0, cg, 0)
@@ -63,6 +66,7 @@ def tree_fractal(order: int, size: float) -> None:
 
 
 def branch(order, size):
+    
     """
     Draws a branching fractal pattern.
     Args:
@@ -91,6 +95,7 @@ def branch(order, size):
 
 
 def koch_curve(order: int, size: float) -> None:
+    
     """
     Draws a single side of the Koch snowflake.
     Args:
@@ -117,6 +122,7 @@ def koch_curve(order: int, size: float) -> None:
 
 
 def minkowski_curve(order: int, size: float) -> None:
+    
     """
     Draws the Minkowski fractal curve.
     Args:
@@ -150,6 +156,7 @@ def minkowski_curve(order: int, size: float) -> None:
 
 
 def ice_fractal_variant(order: int, size: float) -> None:
+    
     """
     Draws a variant of the Ice fractal with 90-degree spikes.
     Args:
@@ -172,6 +179,7 @@ def ice_fractal_variant(order: int, size: float) -> None:
 
 
 def ice_fractal_60(order: int, size: float) -> None:
+    
     """
     Draws the 'Ice' fractal with 60-degree spike.
     Args:
@@ -180,6 +188,7 @@ def ice_fractal_60(order: int, size: float) -> None:
     Returns:
         None
     """
+    
     step1 = size / 2
     if order == 0:
         forward(step1)
@@ -199,6 +208,7 @@ def ice_fractal_60(order: int, size: float) -> None:
 
 
 def levi(order: int, size: float) -> None:
+    
     """
     Draws the 'Levi' fractal pattern using turtle graphics.
     Args:
@@ -207,6 +217,7 @@ def levi(order: int, size: float) -> None:
     Returns:
         None
     """
+    
     step = size / 2
     if order == 0:
         fd(step)
@@ -251,6 +262,7 @@ def circle_cloud_fractal(x: float, y: float, depth: int, radius: float) -> None:
 
 
 def fractal_1(depth: int, size: float) -> None:
+    
     """
     Draws a custom fractal pattern based on recursive branching.
     Args:
@@ -273,6 +285,7 @@ def fractal_1(depth: int, size: float) -> None:
 
 
 def crystal_fractal(order: int, size: float) -> None:
+    
     """
     Draws the 'Crystal Fractal' pattern using turtle graphics.
     Args:

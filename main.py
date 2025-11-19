@@ -258,7 +258,7 @@ def circle_cloud_fractal(x: float, y: float, depth: int, radius: float) -> None:
         new_x = x + math.cos(angle) * radius * 0.8
         new_y = y + math.sin(angle) * radius * 0.8
         new_radius = radius * 0.55
-        circle_cloud_fractal(new_x, new_y, new_radius, depth - 1)
+        circle_cloud_fractal(new_x, new_y, depth - 1, new_radius)
 
 
 def fractal_1(depth: int, size: float) -> None:

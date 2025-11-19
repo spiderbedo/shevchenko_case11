@@ -218,7 +218,7 @@ def levi(order: int, size: float) -> None:
         None
     """
     
-    step = size / 2
+    step = size / 1.5
     if order == 0:
         fd(step)
     else:

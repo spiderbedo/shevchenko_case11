@@ -273,16 +273,13 @@ def main():
         print(f"Рекомендуемая глубина: {fractal_info['depth'][0]}-{fractal_info['depth'][1]}")
         print(f"Рекомендуемый размер: {fractal_info['size'][0]}-{fractal_info['size'][1]}")
 
-        # Выбор цвета фона
         show_background_colors()
         bg_choice = get_user_choice("Выберите цвет фона (1-5): ", ['1', '2', '3', '4', '5'])
 
-        # Выбор цвета фрактала
         show_fractal_colors()
         fractal_color_choice = get_user_choice("Выберите цвет фрактала (1-8): ",
                                                ['1', '2', '3', '4', '5', '6', '7', '8'])
 
-        # Ввод параметров
         try:
             depth = int(input(f"Введите глубину рекурсии ({fractal_info['depth'][0]}-{fractal_info['depth'][1]}): "))
             size = float(input(f"Введите размер ({fractal_info['size'][0]}-{fractal_info['size'][1]}): "))

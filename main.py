@@ -220,6 +220,11 @@ def circle_cloud_fractal(x: float, y: float, depth: int, radius: float) -> None:
     if depth == 0 or radius < 2:
         return
 
+    up()
+    goto(x, y - radius)
+    down()
+    circle(radius)
+
     branches = 3
     angle_step = 360 / branches
 
@@ -413,9 +418,6 @@ def main():
             rt(120)
 
         elif choice == '10':
-            up()
-            goto(x, y - radius)
-            down()
             circle_cloud_fractal(0, 0, depth, size)
 
         elif choice == '11':

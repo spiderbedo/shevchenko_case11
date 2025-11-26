@@ -349,7 +349,7 @@ def main():
 
         reset()
         tracer(False)
-        speed(0)
+        hideturtle()
         pensize(2)
         bgcolor(ru.BACKGROUND_COLORS[bg_choice])
         pencolor(ru.FRACTAL_COLORS[fractal_color_choice])

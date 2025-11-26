@@ -79,9 +79,6 @@ def tree_fractal(order: int, size: float) -> None:
         None
     """
     
-    colormode(255)
-    cg = 255 - int(order * (250 / 6)) % 255
-    color(0, cg, 0)
     if order == 0:
         forward(size)
     else:

@@ -342,8 +342,8 @@ def main():
                                                ['1', '2', '3', '4', '5', '6', '7', '8'])
 
         try:
-            depth = int(input((f"{ru.ENTERDEPTH} {fractal_info[ru.DEPTH][0]} - {fractal_info[ru.DEPTH][1]}")))
-            size = float(input((f"{ru.ENTERSIZE} {fractal_info[ru.SIZE][0]} - {fractal_info[ru.SIZE][1]}")))
+            depth = int(input((f"{ru.ENTERDEPTH} {fractal_info[ru.DEPTH][0]} - {fractal_info[ru.DEPTH][1]}: ")))
+            size = float(input((f"{ru.ENTERSIZE} {fractal_info[ru.SIZE][0]} - {fractal_info[ru.SIZE][1]}: ")))
         except ValueError:
             print(ru.ENTERERROR)
             depth = fractal_info[ru.DEPTH][0]

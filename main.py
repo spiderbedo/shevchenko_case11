@@ -2,8 +2,6 @@ from turtle import *
 import math
 import ru_local as ru
 
-tracer(False)
-
 
 def recursive_square(order: int, size: float) -> None:
     """
@@ -350,6 +348,7 @@ def main():
             size = fractal_info[ru.SIZE][0]
 
         reset()
+        tracer(False)
         speed(0)
         pensize(2)
         bgcolor(ru.BACKGROUND_COLORS[bg_choice])
@@ -432,7 +431,7 @@ def main():
             goto(step, 0)
             down()
             crystal_fractal(depth, size)
-
+        
         update()
         print(ru.CONGRATS)
 

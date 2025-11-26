@@ -363,7 +363,19 @@ def show_fractal_colors():
     print("8. Пурпурный")
 
 
-def get_user_choice(prompt, options):
+def get_user_choice(prompt: str, options: list) -> str:
+    
+    """
+    Gets and validates user input.
+    
+    Args:
+        prompt (str): The message displayed to the user
+        options (list): List of valid choice options
+        
+    Returns:
+        str: The validated user choice
+    """
+    
     while True:
         choice = input(prompt)
         if choice in options:

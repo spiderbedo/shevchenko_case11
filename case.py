@@ -91,7 +91,7 @@ def tree_fractal(order: int, size: float) -> None:
         backward(size)
 
 
-def branch(order, size):
+def branch(order: int, size: float) -> None:
         
     """
     Draws a branching fractal pattern.
